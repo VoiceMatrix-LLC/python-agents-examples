@@ -1,9 +1,9 @@
 ---
-created: 2026-06-20T12:23:33
-tags: [ai, project]
+created: 2026-06-20T13:36:58
+tags: [ai, concept]
 title: Voice Agents
 ---
 
 # Voice Agents
 
-Realtime AI you talk to. Built on [[LiveKit]].
+Real-time AI you talk to. Built on [[LiveKit]] and an [[Agent Pipeline]]. Can use [[Function Calling]] to take actions and [[RAG]] for knowledge.

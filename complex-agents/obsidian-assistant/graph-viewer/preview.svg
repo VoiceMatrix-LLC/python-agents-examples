@@ -1,18 +1,120 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="520" height="520" viewBox="0 0 520 520">
-<rect width="520" height="520" fill="#1e1e1e"/>
-<text x="20" y="32" fill="#888" font-family="system-ui" font-size="13" letter-spacing="2">OBSIDIAN GRAPH  ·  preview</text>
-<line x1="260" y1="90" x2="160" y2="398" stroke="#555" stroke-opacity="0.7"/>
-<line x1="422" y1="207" x2="360" y2="398" stroke="#555" stroke-opacity="0.7"/>
-<line x1="422" y1="207" x2="98" y2="207" stroke="#555" stroke-opacity="0.7"/>
-<line x1="360" y1="398" x2="160" y2="398" stroke="#555" stroke-opacity="0.7"/>
-<circle cx="260" cy="90" r="12" fill="#7c6fd6"/>
-<text x="260" y="117" fill="#d4d4d4" font-family="system-ui" font-size="13" text-anchor="middle">LiveKit</text>
-<circle cx="422" cy="207" r="14" fill="#7c6fd6"/>
-<text x="422" y="236" fill="#d4d4d4" font-family="system-ui" font-size="13" text-anchor="middle">Obsidian</text>
-<circle cx="360" cy="398" r="14" fill="#7c6fd6"/>
-<text x="360" y="427" fill="#d4d4d4" font-family="system-ui" font-size="13" text-anchor="middle">Second Brain</text>
-<circle cx="160" cy="398" r="14" fill="#7c6fd6"/>
-<text x="160" y="427" fill="#d4d4d4" font-family="system-ui" font-size="13" text-anchor="middle">Voice Agents</text>
-<circle cx="98" cy="207" r="10" fill="#7c6fd6"/>
-<text x="98" y="232" fill="#d4d4d4" font-family="system-ui" font-size="13" text-anchor="middle">Wikilinks</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="860" viewBox="0 0 860 860">
+<rect width="860" height="860" fill="#1e1e1e"/>
+<text x="24" y="38" fill="#888" font-family="system-ui" font-size="14" letter-spacing="2">OBSIDIAN GRAPH  ·  27 notes, 81 links  ·  preview</text>
+<line x1="430" y1="110" x2="687" y2="239" stroke="#555" stroke-opacity="0.45"/>
+<line x1="430" y1="110" x2="393" y2="748" stroke="#555" stroke-opacity="0.45"/>
+<line x1="430" y1="110" x2="737" y2="522" stroke="#555" stroke-opacity="0.45"/>
+<line x1="430" y1="110" x2="574" y2="144" stroke="#555" stroke-opacity="0.45"/>
+<line x1="430" y1="110" x2="707" y2="590" stroke="#555" stroke-opacity="0.45"/>
+<line x1="430" y1="110" x2="111" y2="449" stroke="#555" stroke-opacity="0.45"/>
+<line x1="321" y1="731" x2="663" y2="650" stroke="#555" stroke-opacity="0.45"/>
+<line x1="321" y1="731" x2="636" y2="185" stroke="#555" stroke-opacity="0.45"/>
+<line x1="173" y1="239" x2="707" y2="590" stroke="#555" stroke-opacity="0.45"/>
+<line x1="224" y1="185" x2="737" y2="522" stroke="#555" stroke-opacity="0.45"/>
+<line x1="749" y1="449" x2="574" y2="144" stroke="#555" stroke-opacity="0.45"/>
+<line x1="749" y1="449" x2="745" y2="374" stroke="#555" stroke-opacity="0.45"/>
+<line x1="724" y1="303" x2="636" y2="185" stroke="#555" stroke-opacity="0.45"/>
+<line x1="724" y1="303" x2="115" y2="374" stroke="#555" stroke-opacity="0.45"/>
+<line x1="724" y1="303" x2="356" y2="119" stroke="#555" stroke-opacity="0.45"/>
+<line x1="724" y1="303" x2="663" y2="650" stroke="#555" stroke-opacity="0.45"/>
+<line x1="724" y1="303" x2="321" y2="731" stroke="#555" stroke-opacity="0.45"/>
+<line x1="724" y1="303" x2="136" y2="303" stroke="#555" stroke-opacity="0.45"/>
+<line x1="574" y1="144" x2="153" y2="590" stroke="#555" stroke-opacity="0.45"/>
+<line x1="574" y1="144" x2="539" y2="731" stroke="#555" stroke-opacity="0.45"/>
+<line x1="254" y1="697" x2="687" y2="239" stroke="#555" stroke-opacity="0.45"/>
+<line x1="254" y1="697" x2="430" y2="110" stroke="#555" stroke-opacity="0.45"/>
+<line x1="136" y1="303" x2="467" y2="748" stroke="#555" stroke-opacity="0.45"/>
+<line x1="197" y1="650" x2="737" y2="522" stroke="#555" stroke-opacity="0.45"/>
+<line x1="197" y1="650" x2="636" y2="185" stroke="#555" stroke-opacity="0.45"/>
+<line x1="197" y1="650" x2="745" y2="374" stroke="#555" stroke-opacity="0.45"/>
+<line x1="745" y1="374" x2="636" y2="185" stroke="#555" stroke-opacity="0.45"/>
+<line x1="745" y1="374" x2="430" y2="110" stroke="#555" stroke-opacity="0.45"/>
+<line x1="745" y1="374" x2="663" y2="650" stroke="#555" stroke-opacity="0.45"/>
+<line x1="636" y1="185" x2="663" y2="650" stroke="#555" stroke-opacity="0.45"/>
+<line x1="153" y1="590" x2="707" y2="590" stroke="#555" stroke-opacity="0.45"/>
+<line x1="606" y1="697" x2="687" y2="239" stroke="#555" stroke-opacity="0.45"/>
+<line x1="606" y1="697" x2="254" y2="697" stroke="#555" stroke-opacity="0.45"/>
+<line x1="606" y1="697" x2="539" y2="731" stroke="#555" stroke-opacity="0.45"/>
+<line x1="606" y1="697" x2="467" y2="748" stroke="#555" stroke-opacity="0.45"/>
+<line x1="606" y1="697" x2="749" y2="449" stroke="#555" stroke-opacity="0.45"/>
+<line x1="123" y1="522" x2="606" y2="697" stroke="#555" stroke-opacity="0.45"/>
+<line x1="123" y1="522" x2="197" y2="650" stroke="#555" stroke-opacity="0.45"/>
+<line x1="123" y1="522" x2="745" y2="374" stroke="#555" stroke-opacity="0.45"/>
+<line x1="539" y1="731" x2="467" y2="748" stroke="#555" stroke-opacity="0.45"/>
+<line x1="467" y1="748" x2="504" y2="119" stroke="#555" stroke-opacity="0.45"/>
+<line x1="467" y1="748" x2="724" y2="303" stroke="#555" stroke-opacity="0.45"/>
+<line x1="467" y1="748" x2="123" y2="522" stroke="#555" stroke-opacity="0.45"/>
+<line x1="286" y1="144" x2="393" y2="748" stroke="#555" stroke-opacity="0.45"/>
+<line x1="356" y1="119" x2="115" y2="374" stroke="#555" stroke-opacity="0.45"/>
+<line x1="737" y1="522" x2="574" y2="144" stroke="#555" stroke-opacity="0.45"/>
+<line x1="111" y1="449" x2="687" y2="239" stroke="#555" stroke-opacity="0.45"/>
+<line x1="111" y1="449" x2="393" y2="748" stroke="#555" stroke-opacity="0.45"/>
+<line x1="687" y1="239" x2="749" y2="449" stroke="#555" stroke-opacity="0.45"/>
+<line x1="687" y1="239" x2="539" y2="731" stroke="#555" stroke-opacity="0.45"/>
+<line x1="504" y1="119" x2="687" y2="239" stroke="#555" stroke-opacity="0.45"/>
+<line x1="504" y1="119" x2="254" y2="697" stroke="#555" stroke-opacity="0.45"/>
+<line x1="504" y1="119" x2="430" y2="110" stroke="#555" stroke-opacity="0.45"/>
+<line x1="504" y1="119" x2="737" y2="522" stroke="#555" stroke-opacity="0.45"/>
+<line x1="504" y1="119" x2="574" y2="144" stroke="#555" stroke-opacity="0.45"/>
+<line x1="504" y1="119" x2="707" y2="590" stroke="#555" stroke-opacity="0.45"/>
+<line x1="504" y1="119" x2="393" y2="748" stroke="#555" stroke-opacity="0.45"/>
+<line x1="504" y1="119" x2="111" y2="449" stroke="#555" stroke-opacity="0.45"/>
+<line x1="504" y1="119" x2="749" y2="449" stroke="#555" stroke-opacity="0.45"/>
+<line x1="504" y1="119" x2="539" y2="731" stroke="#555" stroke-opacity="0.45"/>
+<line x1="115" y1="374" x2="663" y2="650" stroke="#555" stroke-opacity="0.45"/>
+<line x1="115" y1="374" x2="636" y2="185" stroke="#555" stroke-opacity="0.45"/>
+<circle cx="430" cy="110" r="20" fill="#7c6fd6"/>
+<text x="430" y="84" fill="#d4d4d4" font-family="system-ui" font-size="12" text-anchor="middle">Agent Pipeline</text>
+<circle cx="321" cy="731" r="11" fill="#7c6fd6"/>
+<text x="321" y="714" fill="#d4d4d4" font-family="system-ui" font-size="12" text-anchor="middle">Backlinks</text>
+<circle cx="173" cy="239" r="8" fill="#7c6fd6"/>
+<text x="173" y="225" fill="#d4d4d4" font-family="system-ui" font-size="12" text-anchor="middle">Cartesia</text>
+<circle cx="224" cy="185" r="8" fill="#7c6fd6"/>
+<text x="224" y="171" fill="#d4d4d4" font-family="system-ui" font-size="12" text-anchor="middle">Deepgram</text>
+<circle cx="749" cy="449" r="13" fill="#7c6fd6"/>
+<text x="749" y="430" fill="#d4d4d4" font-family="system-ui" font-size="12" text-anchor="middle">Function Calling</text>
+<circle cx="724" cy="303" r="14" fill="#7c6fd6"/>
+<text x="724" y="283" fill="#d4d4d4" font-family="system-ui" font-size="12" text-anchor="middle">Knowledge Management MOC</text>
+<circle cx="574" cy="144" r="16" fill="#7c6fd6"/>
+<text x="574" y="122" fill="#d4d4d4" font-family="system-ui" font-size="12" text-anchor="middle">Large Language Model</text>
+<circle cx="254" cy="697" r="11" fill="#7c6fd6"/>
+<text x="254" y="680" fill="#d4d4d4" font-family="system-ui" font-size="12" text-anchor="middle">LiveKit</text>
+<circle cx="136" cy="303" r="9" fill="#7c6fd6"/>
+<text x="136" y="288" fill="#d4d4d4" font-family="system-ui" font-size="12" text-anchor="middle">Maps of Content</text>
+<circle cx="197" cy="650" r="10" fill="#7c6fd6"/>
+<text x="197" y="634" fill="#d4d4d4" font-family="system-ui" font-size="12" text-anchor="middle">Meeting Notetaker</text>
+<circle cx="745" cy="374" r="14" fill="#7c6fd6"/>
+<text x="745" y="354" fill="#d4d4d4" font-family="system-ui" font-size="12" text-anchor="middle">Obsidian Voice Assistant</text>
+<circle cx="636" cy="185" r="15" fill="#7c6fd6"/>
+<text x="636" y="164" fill="#d4d4d4" font-family="system-ui" font-size="12" text-anchor="middle">Obsidian</text>
+<circle cx="153" cy="590" r="10" fill="#7c6fd6"/>
+<text x="153" y="574" fill="#d4d4d4" font-family="system-ui" font-size="12" text-anchor="middle">OpenAI</text>
+<circle cx="606" cy="697" r="12" fill="#7c6fd6"/>
+<text x="606" y="679" fill="#d4d4d4" font-family="system-ui" font-size="12" text-anchor="middle">Project Apollo</text>
+<circle cx="123" cy="522" r="10" fill="#7c6fd6"/>
+<text x="123" y="506" fill="#d4d4d4" font-family="system-ui" font-size="12" text-anchor="middle">Projects MOC</text>
+<circle cx="539" cy="731" r="12" fill="#7c6fd6"/>
+<text x="539" y="713" fill="#d4d4d4" font-family="system-ui" font-size="12" text-anchor="middle">RAG</text>
+<circle cx="467" cy="748" r="12" fill="#7c6fd6"/>
+<text x="467" y="730" fill="#d4d4d4" font-family="system-ui" font-size="12" text-anchor="middle">Second Brain</text>
+<circle cx="286" cy="144" r="8" fill="#7c6fd6"/>
+<text x="286" y="130" fill="#d4d4d4" font-family="system-ui" font-size="12" text-anchor="middle">Silero</text>
+<circle cx="356" cy="119" r="8" fill="#7c6fd6"/>
+<text x="356" y="105" fill="#d4d4d4" font-family="system-ui" font-size="12" text-anchor="middle">Spaced Repetition</text>
+<circle cx="737" cy="522" r="13" fill="#7c6fd6"/>
+<text x="737" y="503" fill="#d4d4d4" font-family="system-ui" font-size="12" text-anchor="middle">Speech to Text</text>
+<circle cx="707" cy="590" r="13" fill="#7c6fd6"/>
+<text x="707" y="571" fill="#d4d4d4" font-family="system-ui" font-size="12" text-anchor="middle">Text to Speech</text>
+<circle cx="111" cy="449" r="10" fill="#7c6fd6"/>
+<text x="111" y="433" fill="#d4d4d4" font-family="system-ui" font-size="12" text-anchor="middle">Turn Detection</text>
+<circle cx="393" cy="748" r="12" fill="#7c6fd6"/>
+<text x="393" y="730" fill="#d4d4d4" font-family="system-ui" font-size="12" text-anchor="middle">Voice Activity Detection</text>
+<circle cx="687" cy="239" r="15" fill="#7c6fd6"/>
+<text x="687" y="218" fill="#d4d4d4" font-family="system-ui" font-size="12" text-anchor="middle">Voice Agents</text>
+<circle cx="504" cy="119" r="17" fill="#7c6fd6"/>
+<text x="504" y="96" fill="#d4d4d4" font-family="system-ui" font-size="12" text-anchor="middle">Voice AI MOC</text>
+<circle cx="663" cy="650" r="13" fill="#7c6fd6"/>
+<text x="663" y="631" fill="#d4d4d4" font-family="system-ui" font-size="12" text-anchor="middle">Wikilinks</text>
+<circle cx="115" cy="374" r="10" fill="#7c6fd6"/>
+<text x="115" y="358" fill="#d4d4d4" font-family="system-ui" font-size="12" text-anchor="middle">Zettelkasten</text>
 </svg>

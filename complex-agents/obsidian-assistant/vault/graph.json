@@ -1,22 +1,160 @@
 {
   "nodes": [
     {
-      "id": "LiveKit",
-      "slug": "livekit",
+      "id": "Agent Pipeline",
+      "slug": "agent-pipeline",
       "tags": [
-        "infra"
+        "ai",
+        "concept"
+      ],
+      "links": 6,
+      "backlinks": 8
+    },
+    {
+      "id": "Backlinks",
+      "slug": "backlinks",
+      "tags": [
+        "pkm",
+        "concept"
+      ],
+      "links": 2,
+      "backlinks": 3
+    },
+    {
+      "id": "Cartesia",
+      "slug": "cartesia",
+      "tags": [
+        "tool",
+        "ai"
       ],
       "links": 1,
       "backlinks": 1
     },
     {
-      "id": "Obsidian",
-      "slug": "obsidian",
+      "id": "Deepgram",
+      "slug": "deepgram",
       "tags": [
+        "tool",
+        "ai"
+      ],
+      "links": 1,
+      "backlinks": 1
+    },
+    {
+      "id": "Function Calling",
+      "slug": "function-calling",
+      "tags": [
+        "ai",
+        "concept"
+      ],
+      "links": 2,
+      "backlinks": 5
+    },
+    {
+      "id": "Knowledge Management MOC",
+      "slug": "knowledge-management-moc",
+      "tags": [
+        "moc",
         "pkm"
+      ],
+      "links": 6,
+      "backlinks": 2
+    },
+    {
+      "id": "Large Language Model",
+      "slug": "large-language-model",
+      "tags": [
+        "ai",
+        "concept"
+      ],
+      "links": 4,
+      "backlinks": 6
+    },
+    {
+      "id": "LiveKit",
+      "slug": "livekit",
+      "tags": [
+        "tool",
+        "infra"
+      ],
+      "links": 2,
+      "backlinks": 3
+    },
+    {
+      "id": "Maps of Content",
+      "slug": "maps-of-content",
+      "tags": [
+        "pkm",
+        "concept"
       ],
       "links": 2,
       "backlinks": 1
+    },
+    {
+      "id": "Meeting Notetaker",
+      "slug": "meeting-notetaker",
+      "tags": [
+        "project"
+      ],
+      "links": 3,
+      "backlinks": 1
+    },
+    {
+      "id": "Obsidian Voice Assistant",
+      "slug": "obsidian-voice-assistant",
+      "tags": [
+        "project"
+      ],
+      "links": 4,
+      "backlinks": 4
+    },
+    {
+      "id": "Obsidian",
+      "slug": "obsidian",
+      "tags": [
+        "tool",
+        "pkm"
+      ],
+      "links": 3,
+      "backlinks": 6
+    },
+    {
+      "id": "OpenAI",
+      "slug": "openai",
+      "tags": [
+        "tool",
+        "ai"
+      ],
+      "links": 2,
+      "backlinks": 2
+    },
+    {
+      "id": "Project Apollo",
+      "slug": "project-apollo",
+      "tags": [
+        "project"
+      ],
+      "links": 5,
+      "backlinks": 1
+    },
+    {
+      "id": "Projects MOC",
+      "slug": "projects-moc",
+      "tags": [
+        "moc"
+      ],
+      "links": 3,
+      "backlinks": 1
+    },
+    {
+      "id": "RAG",
+      "slug": "rag",
+      "tags": [
+        "ai",
+        "concept"
+      ],
+      "links": 2,
+      "backlinks": 4
     },
     {
       "id": "Second Brain",
@@ -24,53 +162,434 @@
       "tags": [
         "moc"
       ],
-      "links": 2,
+      "links": 3,
+      "backlinks": 3
+    },
+    {
+      "id": "Silero",
+      "slug": "silero",
+      "tags": [
+        "tool",
+        "ai"
+      ],
+      "links": 1,
       "backlinks": 1
+    },
+    {
+      "id": "Spaced Repetition",
+      "slug": "spaced-repetition",
+      "tags": [
+        "pkm",
+        "method"
+      ],
+      "links": 1,
+      "backlinks": 1
+    },
+    {
+      "id": "Speech to Text",
+      "slug": "speech-to-text",
+      "tags": [
+        "ai",
+        "concept"
+      ],
+      "links": 3,
+      "backlinks": 4
+    },
+    {
+      "id": "Text to Speech",
+      "slug": "text-to-speech",
+      "tags": [
+        "ai",
+        "concept"
+      ],
+      "links": 3,
+      "backlinks": 4
+    },
+    {
+      "id": "Turn Detection",
+      "slug": "turn-detection",
+      "tags": [
+        "ai",
+        "concept"
+      ],
+      "links": 2,
+      "backlinks": 2
+    },
+    {
+      "id": "Voice Activity Detection",
+      "slug": "voice-activity-detection",
+      "tags": [
+        "ai",
+        "concept"
+      ],
+      "links": 2,
+      "backlinks": 4
     },
     {
       "id": "Voice Agents",
       "slug": "voice-agents",
       "tags": [
         "ai",
-        "project"
+        "concept"
       ],
-      "links": 1,
-      "backlinks": 2
+      "links": 4,
+      "backlinks": 5
+    },
+    {
+      "id": "Voice AI MOC",
+      "slug": "voice-ai-moc",
+      "tags": [
+        "moc",
+        "ai"
+      ],
+      "links": 10,
+      "backlinks": 1
     },
     {
       "id": "Wikilinks",
       "slug": "wikilinks",
       "tags": [
-        "pkm"
+        "pkm",
+        "concept"
       ],
-      "links": 0,
-      "backlinks": 1
+      "links": 2,
+      "backlinks": 5
+    },
+    {
+      "id": "Zettelkasten",
+      "slug": "zettelkasten",
+      "tags": [
+        "pkm",
+        "method"
+      ],
+      "links": 2,
+      "backlinks": 2
     }
   ],
   "edges": [
+    {
+      "source": "Agent Pipeline",
+      "target": "Voice Agents"
+    },
+    {
+      "source": "Agent Pipeline",
+      "target": "Voice Activity Detection"
+    },
+    {
+      "source": "Agent Pipeline",
+      "target": "Speech to Text"
+    },
+    {
+      "source": "Agent Pipeline",
+      "target": "Large Language Model"
+    },
+    {
+      "source": "Agent Pipeline",
+      "target": "Text to Speech"
+    },
+    {
+      "source": "Agent Pipeline",
+      "target": "Turn Detection"
+    },
+    {
+      "source": "Backlinks",
+      "target": "Wikilinks"
+    },
+    {
+      "source": "Backlinks",
+      "target": "Obsidian"
+    },
+    {
+      "source": "Cartesia",
+      "target": "Text to Speech"
+    },
+    {
+      "source": "Deepgram",
+      "target": "Speech to Text"
+    },
+    {
+      "source": "Function Calling",
+      "target": "Large Language Model"
+    },
+    {
+      "source": "Function Calling",
+      "target": "Obsidian Voice Assistant"
+    },
+    {
+      "source": "Knowledge Management MOC",
+      "target": "Obsidian"
+    },
+    {
+      "source": "Knowledge Management MOC",
+      "target": "Zettelkasten"
+    },
+    {
+      "source": "Knowledge Management MOC",
+      "target": "Spaced Repetition"
+    },
+    {
+      "source": "Knowledge Management MOC",
+      "target": "Wikilinks"
+    },
+    {
+      "source": "Knowledge Management MOC",
+      "target": "Backlinks"
+    },
+    {
+      "source": "Knowledge Management MOC",
+      "target": "Maps of Content"
+    },
+    {
+      "source": "Large Language Model",
+      "target": "OpenAI"
+    },
+    {
+      "source": "Large Language Model",
+      "target": "Function Calling"
+    },
+    {
+      "source": "Large Language Model",
+      "target": "RAG"
+    },
+    {
+      "source": "Large Language Model",
+      "target": "Agent Pipeline"
+    },
     {
       "source": "LiveKit",
       "target": "Voice Agents"
     },
     {
-      "source": "Obsidian",
+      "source": "LiveKit",
+      "target": "Agent Pipeline"
+    },
+    {
+      "source": "Maps of Content",
       "target": "Second Brain"
+    },
+    {
+      "source": "Maps of Content",
+      "target": "Knowledge Management MOC"
+    },
+    {
+      "source": "Meeting Notetaker",
+      "target": "Speech to Text"
+    },
+    {
+      "source": "Meeting Notetaker",
+      "target": "Obsidian"
+    },
+    {
+      "source": "Meeting Notetaker",
+      "target": "Obsidian Voice Assistant"
+    },
+    {
+      "source": "Obsidian Voice Assistant",
+      "target": "Obsidian"
+    },
+    {
+      "source": "Obsidian Voice Assistant",
+      "target": "Agent Pipeline"
+    },
+    {
+      "source": "Obsidian Voice Assistant",
+      "target": "Function Calling"
+    },
+    {
+      "source": "Obsidian Voice Assistant",
+      "target": "Wikilinks"
     },
     {
       "source": "Obsidian",
       "target": "Wikilinks"
     },
     {
-      "source": "Second Brain",
+      "source": "Obsidian",
+      "target": "Backlinks"
+    },
+    {
+      "source": "Obsidian",
+      "target": "Obsidian Voice Assistant"
+    },
+    {
+      "source": "OpenAI",
+      "target": "Large Language Model"
+    },
+    {
+      "source": "OpenAI",
+      "target": "Text to Speech"
+    },
+    {
+      "source": "Project Apollo",
       "target": "Voice Agents"
     },
     {
+      "source": "Project Apollo",
+      "target": "LiveKit"
+    },
+    {
+      "source": "Project Apollo",
+      "target": "RAG"
+    },
+    {
+      "source": "Project Apollo",
+      "target": "Second Brain"
+    },
+    {
+      "source": "Project Apollo",
+      "target": "Function Calling"
+    },
+    {
+      "source": "Projects MOC",
+      "target": "Project Apollo"
+    },
+    {
+      "source": "Projects MOC",
+      "target": "Meeting Notetaker"
+    },
+    {
+      "source": "Projects MOC",
+      "target": "Obsidian Voice Assistant"
+    },
+    {
+      "source": "RAG",
+      "target": "Large Language Model"
+    },
+    {
+      "source": "RAG",
+      "target": "Second Brain"
+    },
+    {
       "source": "Second Brain",
-      "target": "Obsidian"
+      "target": "Voice AI MOC"
+    },
+    {
+      "source": "Second Brain",
+      "target": "Knowledge Management MOC"
+    },
+    {
+      "source": "Second Brain",
+      "target": "Projects MOC"
+    },
+    {
+      "source": "Silero",
+      "target": "Voice Activity Detection"
+    },
+    {
+      "source": "Spaced Repetition",
+      "target": "Zettelkasten"
+    },
+    {
+      "source": "Speech to Text",
+      "target": "Deepgram"
+    },
+    {
+      "source": "Speech to Text",
+      "target": "Large Language Model"
+    },
+    {
+      "source": "Speech to Text",
+      "target": "Agent Pipeline"
+    },
+    {
+      "source": "Text to Speech",
+      "target": "OpenAI"
+    },
+    {
+      "source": "Text to Speech",
+      "target": "Cartesia"
+    },
+    {
+      "source": "Text to Speech",
+      "target": "Agent Pipeline"
+    },
+    {
+      "source": "Turn Detection",
+      "target": "Voice Agents"
+    },
+    {
+      "source": "Turn Detection",
+      "target": "Voice Activity Detection"
+    },
+    {
+      "source": "Voice Activity Detection",
+      "target": "Silero"
+    },
+    {
+      "source": "Voice Activity Detection",
+      "target": "Agent Pipeline"
     },
     {
       "source": "Voice Agents",
       "target": "LiveKit"
+    },
+    {
+      "source": "Voice Agents",
+      "target": "Agent Pipeline"
+    },
+    {
+      "source": "Voice Agents",
+      "target": "Function Calling"
+    },
+    {
+      "source": "Voice Agents",
+      "target": "RAG"
+    },
+    {
+      "source": "Voice AI MOC",
+      "target": "Voice Agents"
+    },
+    {
+      "source": "Voice AI MOC",
+      "target": "LiveKit"
+    },
+    {
+      "source": "Voice AI MOC",
+      "target": "Agent Pipeline"
+    },
+    {
+      "source": "Voice AI MOC",
+      "target": "Speech to Text"
+    },
+    {
+      "source": "Voice AI MOC",
+      "target": "Large Language Model"
+    },
+    {
+      "source": "Voice AI MOC",
+      "target": "Text to Speech"
+    },
+    {
+      "source": "Voice AI MOC",
+      "target": "Voice Activity Detection"
+    },
+    {
+      "source": "Voice AI MOC",
+      "target": "Turn Detection"
+    },
+    {
+      "source": "Voice AI MOC",
+      "target": "Function Calling"
+    },
+    {
+      "source": "Voice AI MOC",
+      "target": "RAG"
+    },
+    {
+      "source": "Wikilinks",
+      "target": "Backlinks"
+    },
+    {
+      "source": "Wikilinks",
+      "target": "Obsidian"
+    },
+    {
+      "source": "Zettelkasten",
+      "target": "Wikilinks"
+    },
+    {
+      "source": "Zettelkasten",
+      "target": "Obsidian"
     }
   ]
 }

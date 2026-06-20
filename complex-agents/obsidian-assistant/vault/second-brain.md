@@ -1,13 +1,11 @@
 ---
-created: 2026-06-20T12:23:33
+created: 2026-06-20T13:36:58
 tags: [moc]
 title: Second Brain
 ---
 
 # Second Brain
 
-The central hub of my knowledge base.
+The home note of my knowledge base. Start here.
 
-See also [[Voice Agents]].
-
-See also [[Obsidian]].
+Areas: [[Voice AI MOC]] · [[Knowledge Management MOC]] · [[Projects MOC]].
