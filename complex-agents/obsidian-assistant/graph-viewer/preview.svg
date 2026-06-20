@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="520" viewBox="0 0 520 520">
+<rect width="520" height="520" fill="#1e1e1e"/>
+<text x="20" y="32" fill="#888" font-family="system-ui" font-size="13" letter-spacing="2">OBSIDIAN GRAPH  ·  preview</text>
+<line x1="260" y1="90" x2="160" y2="398" stroke="#555" stroke-opacity="0.7"/>
+<line x1="422" y1="207" x2="360" y2="398" stroke="#555" stroke-opacity="0.7"/>
+<line x1="422" y1="207" x2="98" y2="207" stroke="#555" stroke-opacity="0.7"/>
+<line x1="360" y1="398" x2="160" y2="398" stroke="#555" stroke-opacity="0.7"/>
+<circle cx="260" cy="90" r="12" fill="#7c6fd6"/>
+<text x="260" y="117" fill="#d4d4d4" font-family="system-ui" font-size="13" text-anchor="middle">LiveKit</text>
+<circle cx="422" cy="207" r="14" fill="#7c6fd6"/>
+<text x="422" y="236" fill="#d4d4d4" font-family="system-ui" font-size="13" text-anchor="middle">Obsidian</text>
+<circle cx="360" cy="398" r="14" fill="#7c6fd6"/>
+<text x="360" y="427" fill="#d4d4d4" font-family="system-ui" font-size="13" text-anchor="middle">Second Brain</text>
+<circle cx="160" cy="398" r="14" fill="#7c6fd6"/>
+<text x="160" y="427" fill="#d4d4d4" font-family="system-ui" font-size="13" text-anchor="middle">Voice Agents</text>
+<circle cx="98" cy="207" r="10" fill="#7c6fd6"/>
+<text x="98" y="232" fill="#d4d4d4" font-family="system-ui" font-size="13" text-anchor="middle">Wikilinks</text>
+</svg>
