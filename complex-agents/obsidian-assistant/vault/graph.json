@@ -1,0 +1,76 @@
+{
+  "nodes": [
+    {
+      "id": "LiveKit",
+      "slug": "livekit",
+      "tags": [
+        "infra"
+      ],
+      "links": 1,
+      "backlinks": 1
+    },
+    {
+      "id": "Obsidian",
+      "slug": "obsidian",
+      "tags": [
+        "pkm"
+      ],
+      "links": 2,
+      "backlinks": 1
+    },
+    {
+      "id": "Second Brain",
+      "slug": "second-brain",
+      "tags": [
+        "moc"
+      ],
+      "links": 2,
+      "backlinks": 1
+    },
+    {
+      "id": "Voice Agents",
+      "slug": "voice-agents",
+      "tags": [
+        "ai",
+        "project"
+      ],
+      "links": 1,
+      "backlinks": 2
+    },
+    {
+      "id": "Wikilinks",
+      "slug": "wikilinks",
+      "tags": [
+        "pkm"
+      ],
+      "links": 0,
+      "backlinks": 1
+    }
+  ],
+  "edges": [
+    {
+      "source": "LiveKit",
+      "target": "Voice Agents"
+    },
+    {
+      "source": "Obsidian",
+      "target": "Second Brain"
+    },
+    {
+      "source": "Obsidian",
+      "target": "Wikilinks"
+    },
+    {
+      "source": "Second Brain",
+      "target": "Voice Agents"
+    },
+    {
+      "source": "Second Brain",
+      "target": "Obsidian"
+    },
+    {
+      "source": "Voice Agents",
+      "target": "LiveKit"
+    }
+  ]
+}

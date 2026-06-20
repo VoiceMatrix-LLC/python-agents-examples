@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Obsidian Graph Viewer</title>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <style>
+    :root {
+      --bg: #1e1e1e; --panel: #252526; --border: #333; --text: #d4d4d4;
+      --muted: #888; --accent: #7c6fd6; --accent-dim: #4a4470; --link: #555;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; height: 100%; font-family: system-ui, sans-serif; background: var(--bg); color: var(--text); }
+    #app { display: flex; height: 100vh; }
+    #graph { flex: 1; position: relative; }
+    #sidebar { width: 320px; border-left: 1px solid var(--border); background: var(--panel); padding: 16px; overflow-y: auto; }
+    h1 { font-size: 15px; margin: 0 0 12px; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
+    .toolbar { position: absolute; top: 12px; left: 12px; display: flex; gap: 8px; z-index: 5; }
+    input[type="search"], button, label.filebtn {
+      background: var(--panel); color: var(--text); border: 1px solid var(--border);
+      border-radius: 6px; padding: 7px 10px; font-size: 13px; cursor: pointer;
+    }
+    input[type="search"] { cursor: text; min-width: 200px; }
+    label.filebtn:hover, button:hover { border-color: var(--accent); }
+    input[type="file"] { display: none; }
+    .node circle { cursor: pointer; transition: r .15s; }
+    .node text { fill: var(--text); font-size: 11px; pointer-events: none; }
+    .node.dim { opacity: .15; }
+    line.edge { stroke: var(--link); stroke-opacity: .6; }
+    line.edge.hl { stroke: var(--accent); stroke-opacity: 1; }
+    .detail-title { font-size: 18px; margin: 0 0 8px; color: #fff; }
+    .pill { display: inline-block; background: var(--accent-dim); color: #cfc8ff; border-radius: 10px; padding: 2px 9px; font-size: 11px; margin: 0 4px 4px 0; }
+    .section { margin-top: 16px; }
+    .section h2 { font-size: 12px; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
+    .section a { color: var(--accent); cursor: pointer; display: block; padding: 3px 0; text-decoration: none; }
+    .section a:hover { text-decoration: underline; }
+    .empty { color: var(--muted); font-size: 13px; }
+    .stats { color: var(--muted); font-size: 12px; margin-top: 8px; }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div id="graph">
+      <div class="toolbar">
+        <input id="search" type="search" placeholder="Filter notes…" />
+        <button id="reload">Reload graph.json</button>
+        <label class="filebtn">Open graph.json…<input id="file" type="file" accept="application/json" /></label>
+      </div>
+    </div>
+    <div id="sidebar">
+      <h1>Obsidian Graph</h1>
+      <div id="detail">
+        <p class="empty">Click a note to see its connections.</p>
+      </div>
+      <div class="stats" id="stats"></div>
+    </div>
+  </div>
+
+  <script>
+    // ----------------------------------------------------------------- //
+    // This viewer renders the {nodes, edges} graph produced by
+    // ObsidianVault.export_graph() (../vault/graph.json).
+    //
+    // Two ways to load data:
+    //   1. Serve this folder (python -m http.server) so fetch() can read
+    //      ../vault/graph.json — then "Reload graph.json" works.
+    //   2. Open this file directly and use "Open graph.json…" to pick a file.
+    //
+    // To wire LIVE updates from the voice agent, register an RPC handler
+    // "receive_graph" in your LiveKit frontend and call render(graph) with
+    // the payload — the agent broadcasts the graph on every change.
+    // ----------------------------------------------------------------- //
+    const svgWidth = () => document.getElementById('graph').clientWidth;
+    const svgHeight = () => document.getElementById('graph').clientHeight;
+
+    const svg = d3.select('#graph').append('svg')
+      .attr('width', '100%').attr('height', '100%');
+    const container = svg.append('g');
+    svg.call(d3.zoom().scaleExtent([0.2, 4]).on('zoom', (e) => container.attr('transform', e.transform)));
+
+    let simulation, current = { nodes: [], edges: [] };
+
+    function render(graph) {
+      current = graph;
+      container.selectAll('*').remove();
+      document.getElementById('stats').textContent =
+        `${graph.nodes.length} notes · ${graph.edges.length} links`;
+
+      const links = graph.edges.map(e => ({ source: e.source, target: e.target }));
+      const nodes = graph.nodes.map(n => ({ ...n }));
+
+      const link = container.append('g').selectAll('line')
+        .data(links).join('line').attr('class', 'edge');
+
+      const node = container.append('g').selectAll('g')
+        .data(nodes).join('g').attr('class', 'node')
+        .call(d3.drag()
+          .on('start', (e, d) => { if (!e.active) simulation.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
+          .on('drag', (e, d) => { d.fx = e.x; d.fy = e.y; })
+          .on('end', (e, d) => { if (!e.active) simulation.alphaTarget(0); d.fx = null; d.fy = null; }));
+
+      node.append('circle')
+        .attr('r', d => 6 + Math.min(14, (d.links + d.backlinks) * 2))
+        .attr('fill', d => d.tags && d.tags.length ? 'var(--accent)' : '#6a6a6a');
+      node.append('text').attr('x', 12).attr('y', 4).text(d => d.id);
+      node.on('click', (_e, d) => showDetail(d.id));
+
+      simulation = d3.forceSimulation(nodes)
+        .force('link', d3.forceLink(links).id(d => d.id).distance(90))
+        .force('charge', d3.forceManyBody().strength(-300))
+        .force('center', d3.forceCenter(svgWidth() / 2, svgHeight() / 2))
+        .force('collide', d3.forceCollide(30))
+        .on('tick', () => {
+          link.attr('x1', d => d.source.x).attr('y1', d => d.source.y)
+              .attr('x2', d => d.target.x).attr('y2', d => d.target.y);
+          node.attr('transform', d => `translate(${d.x},${d.y})`);
+        });
+    }
+
+    function showDetail(id) {
+      const n = current.nodes.find(x => x.id === id);
+      if (!n) return;
+      const outgoing = current.edges.filter(e => e.source.id === id || e.source === id).map(e => e.target.id || e.target);
+      const incoming = current.edges.filter(e => e.target.id === id || e.target === id).map(e => e.source.id || e.source);
+
+      const linkList = (arr) => arr.length
+        ? arr.map(t => `<a onclick="showDetail('${t.replace(/'/g, "\\'")}')">${t}</a>`).join('')
+        : '<span class="empty">None</span>';
+
+      document.getElementById('detail').innerHTML = `
+        <div class="detail-title">${n.id}</div>
+        <div>${(n.tags || []).map(t => `<span class="pill">#${t}</span>`).join('') || '<span class="empty">no tags</span>'}</div>
+        <div class="section"><h2>Links to (${outgoing.length})</h2>${linkList([...new Set(outgoing)])}</div>
+        <div class="section"><h2>Backlinks (${incoming.length})</h2>${linkList([...new Set(incoming)])}</div>`;
+
+      // Highlight connected edges/nodes.
+      const connected = new Set([id, ...outgoing, ...incoming]);
+      container.selectAll('.node').classed('dim', d => !connected.has(d.id));
+      container.selectAll('line.edge').classed('hl', d =>
+        (d.source.id || d.source) === id || (d.target.id || d.target) === id);
+    }
+
+    // Search filter.
+    document.getElementById('search').addEventListener('input', (e) => {
+      const q = e.target.value.toLowerCase();
+      container.selectAll('.node').classed('dim', d => q && !d.id.toLowerCase().includes(q));
+    });
+
+    // Load from a served path.
+    async function loadFromFetch() {
+      try {
+        const res = await fetch('../vault/graph.json?_=' + Date.now());
+        if (!res.ok) throw new Error(res.status);
+        render(await res.json());
+      } catch (err) {
+        document.getElementById('detail').innerHTML =
+          `<p class="empty">Could not fetch ../vault/graph.json (${err}).<br/>` +
+          `Run a static server in this example folder, or use "Open graph.json…".</p>`;
+      }
+    }
+    document.getElementById('reload').addEventListener('click', loadFromFetch);
+
+    // Load from a picked file (works on file://).
+    document.getElementById('file').addEventListener('change', (e) => {
+      const f = e.target.files[0];
+      if (!f) return;
+      const reader = new FileReader();
+      reader.onload = () => render(JSON.parse(reader.result));
+      reader.readAsText(f);
+    });
+
+    loadFromFetch();
+  </script>
+</body>
+</html>

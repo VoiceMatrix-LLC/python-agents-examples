@@ -1,6 +1,6 @@
 # LiveKit Agents Examples
 
-A collection of runnable Python demos and reference applications built with [LiveKit Agents](https://docs.livekit.io/agents/). The repository currently contains **104** examples that cover everything from single-file quickstarts to production-style, multi-agent systems with dedicated frontends.
+A collection of runnable Python demos and reference applications built with [LiveKit Agents](https://docs.livekit.io/agents/). The repository currently contains **106** examples that cover everything from single-file quickstarts to production-style, multi-agent systems with dedicated frontends.
 
 ## What's Inside
 - Voice, video, and telephony agents that demonstrate LiveKit's real-time APIs and the `livekit-agents` Python SDK

@@ -1,6 +1,6 @@
 version: '1.0'
 description: Index of all LiveKit Agent examples with metadata
-total_examples: 104
+total_examples: 106
 examples:
 - file_path: avatars/hedra/dynamically_created_avatar/agent.py
   title: Dynamically Created Avatar
@@ -461,6 +461,40 @@ examples:
   description: Shows how to use the Note Taking Assistant.
   demonstrates:
   - Using the Note Taking Assistant.
+- file_path: complex-agents/obsidian-assistant/obsidian_vault.py
+  title: Obsidian Vault Integration
+  category: complex-agents
+  tags:
+  - complex-agents
+  - obsidian
+  - knowledge-base
+  - markdown
+  - tool
+  difficulty: intermediate
+  description: A reusable, dependency-light library for reading, writing, searching, and linking notes in an Obsidian-style markdown vault.
+  demonstrates:
+  - Managing a folder of Obsidian-compatible .md notes (vault) from Python
+  - Parsing and writing YAML-style frontmatter without extra dependencies
+  - Resolving [[wikilinks]] and computing backlinks across notes
+  - Building a knowledge graph (nodes + edges) for visualization
+  - Exposing the vault as a CLI so it can be tested without LiveKit
+- file_path: complex-agents/obsidian-assistant/agent.py
+  title: Obsidian Voice Assistant
+  category: complex-agents
+  tags:
+  - complex-agents
+  - obsidian
+  - knowledge-base
+  - function-tools
+  - rpc
+  difficulty: intermediate
+  description: A voice agent that turns spoken conversation into an interconnected Obsidian-style markdown vault and pushes live graph updates to a frontend.
+  demonstrates:
+  - Wrapping a plain-Python library (ObsidianVault) as LiveKit function tools
+  - Letting users build a [[wikilinked]] knowledge base entirely by voice
+  - Returning (None, message) tuples so the LLM narrates tool results naturally
+  - Exporting a knowledge graph and broadcasting it to a frontend over RPC
+  - Keeping vault logic decoupled from the voice/transport layer
 - file_path: complex-agents/nutrition-assistant/agent.py
   title: Nutrition Tracker Assistant
   category: complex-agents
